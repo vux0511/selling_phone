@@ -1,0 +1,583 @@
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap");
+    body {
+        font-family: "Roboto Slab", serif;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .product-home {
+        /* box-shadow: 0 0 5px rgba(156, 156, 156, 0.2); */
+        box-shadow: 0 2px 4px #61606029;
+        background-color: #fff;
+    }
+    
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .carousel-inner img {
+        width: 100%;
+        /* Set width to 100% */
+        min-height: 200px;
+    }
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    
+    @media (max-width: 600px) {
+        .carousel-caption {
+            display: none;
+        }
+    }
+    
+    .list-nav {
+        border-radius: 0px;
+        min-height: 50px;
+    }
+    
+    #nameshop a {
+        font-size: 25px;
+        color: white;
+    }
+    
+    #nameshop {
+        font-size: 25px;
+        color: white;
+        text-align: center;
+    }
+    
+    .col-md-8.list-menu ul li a {
+        color: white;
+        font-size: 18px;
+    }
+    
+    .col-md-8.list-menu ul li a:hover {
+        color: #eeee;
+    }
+    
+    .navbar {
+        min-height: 65px;
+    }
+    /* End Header */
+    /* START Sticky Header*/
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    
+    .sticky+.content {
+        padding-top: 102px;
+    }
+    /* END Sticky Header*/
+    /*  Start Navbar TOP */
+    
+    .navbar-top {
+        min-height: 70px;
+        padding-top: 17px;
+        background-color: #fff;
+    }
+    /* END Navbar TOP */
+    /* Start Slide */
+    
+    .mySlides {
+        display: none;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
+    /* Slideshow container */
+    
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+    /* Caption text */
+    
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    /* Number text (1/3 etc) */
+    
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    /* The dots/bullets/indicators */
+    
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active {
+        background-color: #717171;
+    }
+    /* Fading animation */
+    
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    /* On smaller screens, decrease text size */
+    
+    @media only screen and (max-width: 300px) {
+        .text {
+            font-size: 11px
+        }
+    }
+    
+    .container-fluid-slide {
+        padding: 0px;
+    }
+    /* End Slide */
+    /* START TAB PROUDCT */
+    /* Style tab links */
+    
+    .tablink {
+        padding: 14px 16px;
+        font-size: 15px;
+        display: inline-block;
+        padding: 0.6em 1.7em;
+        border: 0.1em solid #ffffff;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.2em;
+        box-sizing: border-box;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+        transition: all 0.2s;
+        align-items: center;
+        background: rgb(175, 174, 174);
+    }
+    
+    .tablink:hover {
+        color: #000000;
+        background-color: #ffffff;
+    }
+    
+    .title {
+        text-align: center;
+        color: #ff523b;
+        font-size: 26px;
+        text-decoration-color: red;
+        text-decoration: underline;
+        padding: 30px 0px;
+    }
+    
+    .tab-css {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .tablink:hover {
+        background-color: rgb(219, 218, 218);
+        color: #fff;
+    }
+    /* Style the tab content (and add height:100% for full page content) */
+    
+    .tabcontent {
+        display: none;
+        padding: 20px 20px;
+        height: 100%;
+    }
+    
+    #Home {
+        background-color: #fff;
+    }
+    
+    #News {
+        background-color: #fff;
+    }
+    
+    #Contact {
+        background-color: #fff;
+    }
+    
+    #About {
+        background-color: #fff;
+    }
+    
+    .container-tab-product {
+        margin-top: 100px;
+    }
+    /* END TAB PRODUCT */
+    /* PRODUCT */
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(214, 214, 214, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        color: #0a263c;
+        font-size: 16px;
+        -webkit-box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+        box-shadow: rgb(228, 226, 226);
+        padding: 5px;
+        height: 332.6px;
+        margin-bottom: 20px;
+    }
+    
+    .price-old {
+        color: #707070;
+        font-size: 1.2rem;
+    }
+    
+    .price-new {
+        color: #D70018;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+    
+    .name-product {
+        margin-bottom: 1rem;
+        font-size: 1.55rem;
+        font-weight: 500;
+        margin-top: 15px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .star {
+        color: #f59e0b;
+        font-size: 14px;
+        margin-top: 3px;
+        /* margin-bottom: 5px; */
+    }
+    
+    .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #ff523b;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: -10px;
+        max-height: 40px;
+        /* bottom: 0px; */
+        /* position: fixed; */
+        /* position:relative;
+    bottom:0px; */
+    }
+    
+    .box-shadow {
+        transition: transform .4s;
+    }
+    
+    .box-shadow:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px 0 rgba(102, 100, 100, 0.2), 0 6px 20px 0 rgba(102, 100, 100, 0.19);
+        transform: scale(1.02);
+    }
+    
+    .container-product-new {
+        padding: 20px 20px;
+        height: 100%;
+        padding-right: 35px;
+        padding-left: 35px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .button-product {
+        display: flex;
+    }
+    
+    .card button:hover {
+        opacity: 0.7;
+    }
+    
+    .col-xs-6 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    /* END PRODUCT */
+    /* Start Chia 5 cột Bootstrap */
+    
+    .col-xs-15,
+    .col-sm-15,
+    .col-md-15,
+    .col-lg-15 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    
+    .col-md-3 {
+        padding-right: 0px;
+    }
+    
+    .col-xs-15 {
+        width: 20%;
+        float: left;
+    }
+    
+    @media (min-width: 768px) {
+        .col-sm-15 {
+            width: 20%;
+            float: left;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .col-md-15 {
+            width: 20%;
+            float: left;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .col-lg-15 {
+            width: 20%;
+            float: left;
+        }
+    }
+    /* End Chia 5 cột Bootstrap */
+    /* Xem thêm */
+    
+    .see-more {
+        background-color: #ff523b;
+        width: 10%;
+        height: 35px;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        border: none;
+        padding-top: 7px;
+        margin: 5px auto;
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        border: 0.1em solid #ffffff;
+        border-radius: 0.2em;
+    }
+    
+    .see-more:hover {
+        background-color: #f77f6d;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    /* Footer */
+    
+    footer {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background: #fff;
+    }
+    
+    footer .content {
+        max-width: 1350px;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    footer .content p,
+    a {
+        color: #0a263c;
+    }
+    
+    footer .content .box {
+        width: 33%;
+        transition: all 0.4s ease;
+    }
+    
+    footer .content .topic {
+        font-size: 22px;
+        font-weight: 600;
+        color: #0a263c;
+        margin-bottom: 16px;
+    }
+    
+    footer .content p {
+        text-align: justify;
+    }
+    
+    footer .content .lower .topic {
+        margin: 24px 0 5px 0;
+    }
+    
+    footer .content .lower i {
+        padding-right: 16px;
+    }
+    
+    footer .content .middle {
+        padding-left: 80px;
+    }
+    
+    footer .content .middle a {
+        line-height: 32px;
+    }
+    
+    footer .content .right input[type="text"] {
+        height: 45px;
+        width: 100%;
+        outline: none;
+        color: #0a263c;
+        background: #fff;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 17px;
+        border: 2px solid #222222;
+    }
+    
+    footer .content .right input[type="submit"] {
+        height: 42px;
+        width: 100%;
+        font-size: 18px;
+        color: #d9d9d9;
+        background: #eb2f06;
+        outline: none;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        margin-top: 12px;
+        border: 2px solid #eb2f06;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .content .right input[type="submit"]:hover {
+        background: none;
+        color: #eb2f06;
+    }
+    
+    footer .content .media-icons a {
+        font-size: 16px;
+        height: 45px;
+        width: 45px;
+        display: inline-block;
+        text-align: center;
+        line-height: 43px;
+        border-radius: 5px;
+        border: 2px solid#ff523b;
+        margin: 30px 5px 0 0;
+        transition: all 0.3s ease;
+    }
+    
+    .content .media-icons a:hover {
+        border-color: #eb2f06;
+    }
+    
+    footer .bottom {
+        width: 100%;
+        text-align: right;
+        color: #d9d9d9;
+        padding: 0 40px 5px 0;
+    }
+    
+    footer .bottom a {
+        color: #eb2f06;
+    }
+    
+    footer a {
+        transition: all 0.3s ease;
+    }
+    
+    footer a:hover {
+        color: #eb2f06;
+    }
+    
+    @media (max-width:1100px) {
+        footer .content .middle {
+            padding-left: 50px;
+        }
+    }
+    
+    @media (max-width:950px) {
+        footer .content .box {
+            width: 50%;
+        }
+        .content .right {
+            margin-top: 40px;
+        }
+    }
+    
+    @media (max-width:560px) {
+        footer {
+            position: relative;
+        }
+        footer .content .box {
+            width: 100%;
+            margin-top: 30px;
+        }
+        footer .content .middle {
+            padding-left: 0;
+        }
+    }
+    
+    .fa-facebook-f {
+        color: #0161cd;
+    }
+    
+    .fa-instagram {
+        color: #f16e34;
+    }
+    
+    .fa-envelope {
+        color: #d7473b;
+    }
+    /* Footer End */
+    /* START jQuery Mobile */
+    
+    @media only screen and (max-width: 46.1875rem) {
+        .hidden-mobile {
+            display: none;
+        }
+    }
+    /* END jQuery Mobile */
